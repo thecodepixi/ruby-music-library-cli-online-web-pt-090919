@@ -79,7 +79,8 @@ class MusicLibraryController
   end 
   
   def play_song 
-    
+    puts "Which song number would you like to play?"
+    user_input = gets.chomp 
   end 
   
  #this ends the class  
