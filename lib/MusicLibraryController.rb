@@ -85,7 +85,7 @@ class MusicLibraryController
     n = 0 
     list_songs.each do |song|
        n += 1 
-       if n == user_input 
+       when n == user_input 
          puts "Playing #{song.name} by #{song.artist.name}"
        end
      end 
