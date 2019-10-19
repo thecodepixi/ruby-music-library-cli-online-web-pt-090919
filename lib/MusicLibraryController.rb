@@ -24,7 +24,7 @@ class MusicLibraryController
   end 
   
   def list_songs 
-    Song.all.sort.each do |song|
+    Song.all.each do |song|
       binding.pry 
     end 
   end 
