@@ -84,8 +84,7 @@ class MusicLibraryController
     user_input = gets.chomp
     user_number = user_input.to_i
     sorted_songs = Song.all.sort { |song_a, song_b| song_a.name <=> song_b.name }
-    n = 1 
-    binding.pry 
+    n = 1
     sorted_songs.each do |song|
       if n == user_number
         puts "Playing #{song.name} by #{song.artist.name}"
