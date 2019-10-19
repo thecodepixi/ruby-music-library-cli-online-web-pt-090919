@@ -28,7 +28,6 @@ class MusicLibraryController
     sorted_songs.each.do |song|
       puts "#{song.index + 1}. #{song.artist.name} - #{song.name} - #{genre.name}"
     end 
-    end 
   end 
  #this ends the class  
 end 
