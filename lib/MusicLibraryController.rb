@@ -21,7 +21,8 @@ class MusicLibraryController
       user_input = gets.chomp 
     end 
     case user_input
-      
+      when "list songs"
+        list_songs
     end 
    # this ends the call method  
   end 
