@@ -20,11 +20,12 @@ class MusicLibraryController
     end 
     
     case user_input
-    when "list songs"
-      Songs.all.sort.each do |song| 
-        puts song.name 
+      when "list songs"
+        Songs.all.sort.each do |song| 
+          puts song.name 
     
     end 
+   # this ends the call method  
   end 
-  
+ #this ends the class  
 end 
