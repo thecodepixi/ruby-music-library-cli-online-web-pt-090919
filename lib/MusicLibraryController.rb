@@ -19,9 +19,10 @@ class MusicLibraryController
     until user_input == "exit"
       puts "What would you like to do?"
       user_input = gets.chomp 
-      if user_input == "list songs"
-        list_songs 
-      end 
+      case user_input 
+        when "list songs"
+          list_songs 
+        end 
     end 
    # this ends the call method  
   end 
