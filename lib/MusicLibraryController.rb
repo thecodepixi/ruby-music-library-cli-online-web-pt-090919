@@ -25,8 +25,6 @@ class MusicLibraryController
   
   def list_songs 
     Song.all.sort { |song| song.name }
-       
-    end 
   end 
  #this ends the class  
 end 
