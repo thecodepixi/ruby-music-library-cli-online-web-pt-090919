@@ -19,7 +19,10 @@ class MusicLibraryController
       user_input = gets.chomp 
     end 
     
+    case user_input
+    when "list songs"
     
+    end 
   end 
   
 end 
