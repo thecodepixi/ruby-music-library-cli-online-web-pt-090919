@@ -24,6 +24,10 @@ class MusicLibraryController
           list_songs 
         when "list artists"
           list_artists
+        when "list genres"
+          list_genres
+        when "list artist"
+          list_songs_by_artist
         end 
     end 
    # this ends the call method  
