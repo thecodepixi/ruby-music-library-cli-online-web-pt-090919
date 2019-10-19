@@ -68,6 +68,12 @@ class MusicLibraryController
     puts "Please enter the name of a genre:"
     genre_name = gets.chomp 
     genre = Genre.find_by_name(genre_name)
+    index = 0 
+    if genre != nil 
+      sorted_songs = genre.songs.sort { |song_a, song_b| song_a.name <=> song_b.name}
+      index += 1 
+      puts "#{index}. #{song.artist.name} - #{song.name}"
+    end 
   end 
   
  #this ends the class  
