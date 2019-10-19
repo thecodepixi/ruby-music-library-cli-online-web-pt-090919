@@ -34,6 +34,7 @@ class MusicLibraryController
   
   def list_artists 
     sorted_artists = [Artist.all.sort { |artist_a, artist_b| artist_a.name <=> artist_b.name }]
+    binding.pry 
     index = 0 
     sorted_artists.each do |artist| 
       index += 1 
