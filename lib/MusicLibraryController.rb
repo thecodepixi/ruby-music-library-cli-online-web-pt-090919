@@ -14,7 +14,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     user_input = nil 
-    while user_input == nil 
+    while user_input != nil 
       user_input = gets.chomp 
     end 
   end 
