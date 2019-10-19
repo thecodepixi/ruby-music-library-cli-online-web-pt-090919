@@ -84,7 +84,7 @@ class MusicLibraryController
     user_input = gets.chomp
     n = 1 
     list_songs.each do |song|
-       if n == user_input 
+       if n == user_input.to_i 
          puts "Playing #{song.name} by #{song.artist.name}"
        end
        n += 1
