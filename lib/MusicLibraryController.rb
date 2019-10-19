@@ -88,6 +88,7 @@ class MusicLibraryController
       if n == user_input
         puts "Playing #{song.name} by #{song.artist.name}"
       end 
+      n += 1
     end 
   end 
   
