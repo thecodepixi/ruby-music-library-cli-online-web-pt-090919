@@ -1,3 +1,5 @@
+require "pry"
+
 class MusicLibraryController
   
   def initialize(path = "./db/mp3s")
@@ -18,16 +20,13 @@ class MusicLibraryController
       puts "What would you like to do?"
       user_input = gets.chomp 
     end 
-    
-    case user_input
-      when "list songs"
-        Songs.all.sort.each do |song| 
-          puts song.name 
-        end 
-    
-    end 
-    
    # this ends the call method  
+  end 
+  
+  def list_songs 
+    Songs.all.sort.each do |song|
+      binding.pry 
+    end 
   end 
  #this ends the class  
 end 
