@@ -87,7 +87,7 @@ class MusicLibraryController
     n = 1 
     binding.pry 
     sorted_songs.each do |song|
-      if n == user_input
+      if n == user_number
         puts "Playing #{song.name} by #{song.artist.name}"
       end 
       n += 1
