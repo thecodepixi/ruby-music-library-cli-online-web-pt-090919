@@ -1,4 +1,5 @@
 class MusicLibraryController
+  
   def initialize(path = "./db/mp3s")
     MusicImporter.new(path).import 
   end 
@@ -14,4 +15,5 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
   end 
+  
 end 
