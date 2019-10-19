@@ -21,6 +21,9 @@ class MusicLibraryController
     
     case user_input
     when "list songs"
+      Songs.all.sort.each do |song| 
+        puts song.name 
+      end 
     
     end 
   end 
