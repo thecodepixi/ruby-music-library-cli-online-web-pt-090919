@@ -55,9 +55,11 @@ class MusicLibraryController
     artist_name = gets.chomp 
     artist = Artist.find_by_name(artist_name)
     index = 0 
-    artist.songs.each do |song|
-      index += 1 
-      puts "#{index}. #{song.name} - #{song.genre.name}"
+    if artist != nil 
+      artist.songs.each do |song|
+        index += 1 
+        puts "#{index}. #{song.name} - #{song.genre.name}"
+      end 
     end 
   end 
  #this ends the class  
