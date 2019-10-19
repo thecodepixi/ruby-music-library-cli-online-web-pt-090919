@@ -9,7 +9,7 @@ class MusicImporter
     @path = path 
   end 
   
-  def self.import 
+  def import 
     files.each do |song| 
       Song.creat_from_filename(song)
     end 
