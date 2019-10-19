@@ -24,8 +24,8 @@ class MusicLibraryController
   end 
   
   def list_songs 
-    Song.all.each do |song|
-      puts song.name 
+    Song.all.sort { |song| song.name }
+       
     end 
   end 
  #this ends the class  
