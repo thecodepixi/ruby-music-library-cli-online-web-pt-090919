@@ -11,7 +11,7 @@ class MusicImporter
   
   def self.import 
     files.each do |song| 
-      Song.find_or_create_by_name(song)
+      Song.n(song)
     end 
   end 
   
